@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ветклиника «Лапа»</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" class="theme" id="theme">
+
+  <header>
+    <a class="brand" href="index.html"><img src="images/logo.svg" alt="Лапа" width="40" height="40"> Лапа</a>
+    <a class="btn call" href="tel:+77001234567">Call Doctor 24/7</a>
+    <input type="checkbox" class="burger-input" id="burger">
+    <label class="burger" for="burger"><span></span><span></span><span></span></label>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#staff">Staff</a>
+      <a href="#form">Запись</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Professional Care for Your Pets</h1>
+      <p>Лечим кошек, собак и грызунов. Приём каждый день, экстренная помощь круглосуточно.</p>
+      <a class="btn cta" href="#form">Make an Appointment</a>
+    </section>
+
+    <section id="services">
+      <h2>Услуги</h2>
+      <section class="grid">
+        <article>
+          <img src="images/therapy.svg" alt="" width="64" height="64">
+          <h3>Therapy</h3>
+          <p>Осмотр, анализы, УЗИ, назначение лечения.</p>
+        </article>
+        <article>
+          <img src="images/surgery.svg" alt="" width="64" height="64">
+          <h3>Surgery</h3>
+          <p>Плановые и срочные операции, наркоз, послеоперационный уход.</p>
+        </article>
+        <article>
+          <img src="images/vaccination.svg" alt="" width="64" height="64">
+          <h3>Vaccination</h3>
+          <p>Прививки, чипирование, ветеринарный паспорт.</p>
+        </article>
+      </section>
+    </section>
+
+    <section id="staff" class="gray">
+      <h2>Врачи</h2>
+      <section class="grid">
+        <article>
+          <h3>Айгерим Сейтова</h3>
+          <p>Терапевт, стаж 12 лет.</p>
+        </article>
+        <article>
+          <h3>Нурлан Абенов</h3>
+          <p>Хирург, стаж 15 лет.</p>
+        </article>
+        <article>
+          <h3>Ляззат Кенжебаева</h3>
+          <p>Вакцинолог, стаж 8 лет.</p>
+        </article>
+      </section>
+    </section>
+
+    <section id="form">
+      <h2>Записаться на приём</h2>
+      <form action="" method="post">
+        <label for="name">Pet's Name</label>
+        <input type="text" id="name" placeholder="Барсик" required>
+
+        <label for="species">Pet Species</label>
+        <select id="species" required>
+          <option value="">Выберите</option>
+          <option>Кошка</option>
+          <option>Собака</option>
+          <option>Грызун</option>
+          <option>Другое</option>
+        </select>
+
+        <label for="phone">Owner's Phone</label>
+        <input type="tel" id="phone" placeholder="+7 700 123 45 67" pattern="\+?[0-9 \-]{10,16}" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="mail@example.com" required>
+
+        <label for="date">Дата</label>
+        <input type="date" id="date" required>
+
+        <button class="btn cta" type="submit">Записаться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Контакты</h2>
+      <address>
+        <p>Экстренно: <a href="tel:+77001234567">+7 700 123 45 67</a></p>
+        <p>г. Астана, ул. Примерная, 10</p>
+        <p><a href="https://t.me/">Telegram</a>, <a href="https://wa.me/">WhatsApp</a></p>
+      </address>
+    </section>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#staff">Staff</a>
+      <a href="#form">Запись</a>
+    </nav>
+    <section>
+      <p><small>© 2026 Ветклиника «Лапа». Лицензия № 000000.</small></p>
+      <label class="btn night" for="theme">Ночной режим</label>
+    </section>
+  </footer>
+</body>
+</html>
